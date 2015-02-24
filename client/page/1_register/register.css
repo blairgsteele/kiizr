@@ -1,0 +1,49 @@
+#register {
+  width: 97%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#register #brand {
+  text-align: center;
+}
+#register #brand i {
+}
+#register #buttons {
+  width: 50%;
+  color: white;
+  font-size: 17px; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 17px;
+}
+#register #buttons a {
+  color: white;
+}
+#register #buttons #login {
+  float: left; width: 49%; padding: 7px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+#register #buttons #signup{
+  float: right; width: 49%; padding: 7px;
+  background: rgba(255,162,0,0.9);
+  border-radius: 4px;
+}
+#at-facebook {
+  display: none;
+}
+#at-pwd-form > div:nth-child(2) {
+  float: left; width: 49%; clear: none;
+}
+#at-pwd-form > div:nth-child(3) {
+  float: right; width: 49%; clear: none;
+}
+#at-pwd-form > div:nth-child(5) {
+  float: left; width: 49%; clear: none;
+}
+#at-pwd-form > div:nth-child(6) {
+  float: right; width: 49%; clear: none;
+}

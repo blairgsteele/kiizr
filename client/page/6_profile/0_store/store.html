@@ -1,0 +1,21 @@
+<template name = 'store'>
+  <div id = 'profile'>
+    {{#with store}}
+      <div id = 'banner' style = 'background-image:url({{banner}});'></div>
+    
+      <div id = 'display_name'> 
+        <div id = 'display' style = 'background-image:url({{picture}});'></div>
+        <div id = 'name'>
+          <div id = 'storename'>{{name}}</div>
+          <div id = 'description'>{{description}}</div>
+        </div>
+        <div id = 'clear'></div>
+      </div>
+    
+    <div id = 'productlist'>
+      {{> productdisplay_store_recent}}
+    </div>
+    {{/with}}
+
+  </div>
+</template>

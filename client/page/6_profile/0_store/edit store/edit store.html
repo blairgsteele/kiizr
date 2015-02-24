@@ -1,0 +1,39 @@
+<template name = 'editstore'>
+  <div id = 'editstore'>
+    <div id = 'inputstore_name'>
+      <form class="ui form">
+        <div class="ui fluid input">
+          <label>Name</label>
+          <input id = 'inputstorename' type="text" placeholder="Kiizr Superstore" value="{{name}}">
+        </div>
+      </form>
+    </div>
+    <div id = 'inputstore_description'>
+      <form class="ui form">
+        <div class="ui fluid input">
+          <label>Description</label>
+          <input id = 'inputstoredescription' type="text" placeholder="A short line saying something about your store." value="{{description}}">
+        </div>
+      </form>
+    </div>
+    <div id = 'inputstoreimage'>
+      <form class="ui form">
+        <div class="ui fluid input">
+          <label>Profile picture</label>
+          <div id = 'displayprofile' style = 'background-image:url({{profile}});'></div>
+          <div id = 'inputstoreprofile'>{{> upload_semanticUI }}</div>
+        </div>
+      </form>
+    </div>
+    <div id = 'inputstorebanner'>
+      <form class="ui form">
+        <div class="ui fluid input">
+          <label>Banner image</label>
+          <div id = 'displaybanner' style = 'background-image:url({{banner}});'></div>
+          <div id = 'inputstorebanner'>{{> upload_semanticUI }}</div>
+        </div>
+      </form>
+    </div>
+    <div id = 'storesubmit'>Save changes</div>
+  </div>
+</template>

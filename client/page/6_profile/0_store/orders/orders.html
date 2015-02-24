@@ -1,0 +1,42 @@
+<template name = 'orders'>
+  <div id = 'orders'>
+    <div id = 'orderheader'>
+      <div id = 'open'>Open orders</div>
+      <div id = 'archive'>Order archive</div>
+    </div>
+    {{#each orders}}
+      {{> order_thumbnail}}
+    {{/each}}
+  </div>
+</template>
+
+<template name = 'order_quicklink'>
+  <div id = 'order_quicklink'>
+    <div id = 'customername'>{{customername}} {{complete}}</div>
+    <div id = 'messagecount'>{{messagecount}} messages</div>
+    <div id = 'clear'></div>
+  </div>
+</template>
+
+<template name = 'order_thumbnail'>
+  <div id = 'order_thumbnail'>
+    <div id = 'productimage' style = 'background-image:url({{productimage}});'></div>
+    <div id = 'right'>
+      <div id = 'information'>
+        <a href="/product/{{product_id}}">
+          <div id = 'productname'>{{productname}}</div> </a>
+        <div id = 'customername'> ordered by {{customername}}</div>
+        <div id = 'productprice'> purchasing price is <b> ${{productprice}} </b></div>
+      </div>
+      
+      {{#if showconfirmation}}
+      <div id = 'confirmation'>
+        <div id = 'cancelorderbutton'><i class="fa fa-times"></i> Cancel</div>
+        <div id = 'completeorderbutton'><i class="fa fa-check"></i> Complete</div>
+      </div>
+      {{/if}}
+    </div>
+    <div id = 'clear'></div>
+    
+  </div>
+</template>

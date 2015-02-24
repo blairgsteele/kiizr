@@ -1,0 +1,43 @@
+#departments {
+  padding-top: 0px;
+}
+#department_thumbnail {
+  float: left; 
+  margin: 3.5px; margin-right: 0px; margin-bottom: 0px;
+  width: 95%; 
+  background: rgba(0,0,0,0.1);
+  text-align: center;
+}
+#department_thumbnail a {
+  color: black;
+}
+
+#department_thumbnail i {
+  padding: 17px; padding-bottom: 0px;
+  font-size: 117px;
+}
+#department_thumbnail p {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+#department_thumbnail_sub {
+  width: 97%; float: right;
+  background: rgba(0,0,0,0.05);
+}
+#department_thumbnail_sub i {
+  padding: 7px;
+  font-size: 21px;
+  float: left;
+}
+#department_thumbnail_sub #name {
+  text-align: left;
+  font-size: 14px;
+  float: left;
+  padding: 7px;
+}
+#department_thumbnail #name:hover {
+  color: rgba(205,112,0,1);
+  font-weight: bold;
+}

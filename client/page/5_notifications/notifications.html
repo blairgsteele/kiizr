@@ -1,0 +1,16 @@
+<template name = 'notifications'>
+  <div id = 'notifications'>
+    {{#each notificationlist}}
+      {{> notification_comment}}
+    {{/each}}
+  </div>
+</template>
+
+<template name = 'notification_comment'>
+  <a href="/product/{{product_id}}">
+    <div id = 'notification_comment'>
+      <span style = 'font-weight: bold;'>{{sentby}}</span> {{themessage}} <span style = 'font-weight: bold;'>"{{productname}}"</span>
+      <p style = 'color: rgba(0,0,0,0.27); font-size: 67%; font-weight: bold; text-align: center;'>{{datemade}}</p>
+    </div>
+  </a>
+</template>

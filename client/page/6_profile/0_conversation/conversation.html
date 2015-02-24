@@ -1,0 +1,47 @@
+<template name = 'conversation'>
+  <div id = 'conversation'>
+    {{> conversationinput}}
+    {{> conversationhistory}}
+  </div>
+</template>
+
+<template name = 'conversationinput'>
+  <div id = 'conversationinput'>
+    <div id = 'message'>
+      <form class="ui form">
+        <div class="field">
+          <input id = 'inputmessage' type="text" placeholder="Type a message...">
+        </div>
+      </form>
+    </div>
+    <div id = 'sendmessage'> Send </div>
+    <div id = 'clear'></div>
+  </div>
+</template>
+
+<template name = 'conversationhistory'>
+  <div id = 'conversationhistory'>
+    {{#each messagelist}}
+      {{> conversationmessage}}
+    {{/each}}
+  </div>
+</template>
+
+<template name = 'conversationmessage'>
+  <div id = 'conversationmessage'>
+    <div id = 'username'> {{username}} </div>
+    <div id = 'date'> {{date_create}} </div>
+    <div id = 'clear'></div>
+    <div id = 'message'> {{message}} </div>
+    {{#if showdelete}}
+      <div id = 'delete'> <i class="fa fa-close"></i> </div>
+    {{/if}}
+    {{#if showadmindelete}}
+      <div id = 'admindelete'> <i class="fa fa-user-secret"></i> </div>
+    {{/if}}
+    {{#if showownerdelete}}
+      <div id = 'ownerdelete'> <i class="fa fa-gavel"></i> </div>
+    {{/if}}
+    <div id = 'clear'></div>
+  </div>
+</template>

@@ -1,0 +1,47 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+meteor-platform
+meteorhacks:npm
+
+iron:router
+random
+fastclick
+
+accounts-base
+accounts-password
+accounts-oauth
+bozhao:link-accounts
+facebook
+accounts-facebook
+accounts-ui
+nooitaf:semantic-ui
+useraccounts:semantic-ui
+oauth
+
+natestrauser:font-awesome
+mrt:moment
+matteodem:easy-search
+less
+jquery
+underscore
+templating
+ui
+livedata
+meteor
+mongo-livedata
+mongo
+blaze
+ddp
+tomi:upload-server
+tomi:upload-jquery
+
+cfs:graphicsmagick
+
+reactive-var
+
+
+npm-container

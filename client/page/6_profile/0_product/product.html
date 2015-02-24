@@ -1,0 +1,140 @@
+<template name = 'product'>
+  <div id = 'product'>
+  	<div id = 'product_left'>
+  		<div id = 'uploadimage' style = 'background-image:url({{image}});'>
+        {{#if showedit}}
+          <div id = 'edit'> <i class="fa fa-pencil"></i> </div>
+        {{/if}}
+      </div>
+  		<div id = 'departmentselect'>{{departmentname}}</div>
+  		<div id = 'conditionselect'>{{condition}}</div>
+  		<div id = 'clear'></div>
+      <div id = 'productbutton'>
+        <div id = 'productbucket'>{{bucketcommand}}</div>
+        <div id = 'productpurchase'>{{purchasecommand}}</div>
+        <div id = 'clear'></div>
+        {{#if linktochild}}
+          <a href="/product/{{linktochild}}">
+            <div id = 'productchild'>This product has been updated, click to view</div> </a>
+        {{/if}}
+      </div>
+  	</div>
+
+  	<div id = 'product_right'>
+  		<div id = 'productname'>{{name}}</div>
+  		<div id = 'productprice'>${{price}}</div>
+      <div id = 'productdescription'>"{{description}}" - <a href="/store/{{store_id}}"><span style='color: rgba(255,162,0,1); font-size:77%; font-weight:bold;'>{{username}}</span></a></div>
+      <div id = 'convo'>
+        <div id = 'commentbutton'><i class="fa fa-comment-o"></i> Comments</div>
+        {{#if showdiscuss}} <div id = 'discussbutton'><i class="fa fa-envelope-o"></i> Discuss order</div> {{/if}}
+        {{#if showadmin}} <div id = 'adminbutton'><i class="fa fa-user-secret"></i> Manage orders</div> {{/if}}
+        <div id = 'clear'></div>
+        {{#with convo}} 
+          {{> conversation}}
+        {{/with}}
+        
+        {{#if showadmin}}
+          {{#each orders}}
+            {{> order_quicklink}}
+          {{/each}}
+        {{/if}}
+      </div>
+  	</div>
+
+  	<div id = 'clear'></div>
+    
+    
+    
+  </div>
+</template>
+
+<template name = 'productdisplay_recent'>
+  <div id = 'productdisplay_recent'>
+    <div class="ui stackable {{columncount}} column grid">      
+      {{#each productdisplayrecent}}
+        <div class="column">{{> product_thumbnail_square}}</div>      
+      {{/each}}
+    </div>
+  </div>
+</template>
+<template name = 'productdisplay_bucket'>
+  <div id = 'productdisplay_bucket'>
+    <div class="ui stackable {{columncount}} column grid">      
+      {{#each productdisplaybucket}}
+        <div class="column">{{> product_thumbnail_square}}</div>      
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name = 'productdisplay_search'>
+  <div id = 'productdisplay_recent'>
+    <div class="ui stackable {{columncount}} column grid"> 
+      {{#esEach index="product"}}
+        <div class="column">{{> product_thumbnail_square}}</div>      
+      {{/esEach}}
+    </div>
+  </div>
+</template>
+<template name = 'productdisplay_my_recent'>
+  <div id = 'productdisplay_recent'>
+    <div class="ui stackable {{columncount}} column grid">      
+      {{#each productdisplayrecent}}
+        <div class="column">{{> product_thumbnail_square}}</div>      
+      {{/each}}
+    </div>
+  </div>
+</template>
+<template name = 'productdisplay_store_recent'>
+  <div id = 'productdisplay_recent'>
+    <div class="ui stackable {{columncount}} column grid">      
+      {{#each productdisplayrecent}}
+        <div class="column">{{> product_thumbnail_square}}</div>      
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+
+<template name = 'productdisplay_department_recent'>
+  <div id = 'productdisplay_recent'>
+    <div class="ui stackable {{columncount}} column grid">      
+      {{#each productdisplayrecent}}
+        <div class="column">{{> product_thumbnail_square}}</div>      
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name = 'product_thumbnail_square'>
+  <div id = 'product_thumbnail_square'>
+    <div id = 'leader'> 
+      <a href="/store/{{store_id}}">
+      {{#if departmenticon}}
+        <div id = 'department'> <i class="fa fa-{{departmenticon}}"></i> </div>
+      {{/if}}
+      <div id = 'user'> {{storename}} </div>
+      </a>
+      {{#if showedit}}
+        <div id = 'edit'> <i class="fa fa-pencil"></i> </div>
+      {{/if}}
+      <div id = 'like' style = 'background:{{editcolor_bg}};color:{{editcolor_co}};'> <i class="fa fa-thumbs-o-up"></i> </div>
+      <div id = 'date'> {{date_create}} </div> 
+      
+      <div id = 'clear'></div>
+    </div>
+    
+    <a href="{{pathFor 'product'}}">
+    <div id = 'image' style = 'background-image:url({{image}});'> 
+    </div>
+    
+    <div id = 'information'> 
+      <div id = 'name'> {{name}} </div>
+      <div id = 'rate'>  </div>
+      <div id = 'price'> {{price}} </div> <div id = 'clear'></div>
+      <div id = 'description'> {{description}} <span style='color: rgba(255,162,0,1); font-size:77%; font-weight:bold;'>({{commentcount}} comments)</span> </div>
+    </div>
+    </a>
+    
+  </div>
+</template>

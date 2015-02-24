@@ -1,0 +1,86 @@
+
+
+
+#department_a_manage #department_a_manage_left {
+  float: left;
+  width: 40%;
+}
+#department_a_manage #department_a_manage_right {
+  float: right;
+  width: 60%;
+}
+@media screen and (max-width: 700px) {
+  #department_a_manage #department_a_manage_left {
+    float: none;
+    width: 100%;
+  }
+  #department_a_manage #department_a_manage_right {
+    float: none;
+    width: 100%;
+  }
+}
+
+#department_a_edit, #department_a_create {
+  padding: 7px;
+}
+#department_a_edit #title, #department_a_create #title {
+  padding: 7px; float: left; width: 70%;
+  font-weight: bold;
+}
+#department_a_edit #exit {
+  padding: 7px; float: right; width: 30%;
+  font-weight: bold; text-align: right;
+}
+#department_a_edit #name, #department_a_create #name {
+  padding: 3.5px;
+}
+#department_a_edit label, #department_a_create label {
+  padding: 3.5px; font-size: 70%;
+  font-weight: bold;
+}
+#department_a_edit #icon, #department_a_create #icon {
+  float: left; width: 50%;
+  padding: 3.5px;
+}
+#department_a_edit #parent, #department_a_create #parent {
+  float: left; width: 50%;
+  padding: 3.5px;
+}
+#department_a_edit #submitdepartment, #department_a_create #submitdepartment {
+  clear: both;
+  margin: 3.5px; padding: 7px; margin-top: 7px;
+  text-align: center; font-size: 15px;
+  background: rgba(0,200,0,0.5); color: white;
+  border-radius: 3.5px; 
+}
+
+#department_a_list {
+  padding: 7px;
+}
+#department_a_thumbnail {
+  width: 100%; padding: 7px;
+  text-align: left;
+  border-bottom: 1px dashed rgba(0,0,0,0.17);
+  border-left: 1px dashed rgba(0,0,0,0.17);
+}
+#department_a_thumbnail #icon {
+  font-size: 30px;
+  float: left; width: 10%;
+  text-align: right;
+}
+#department_a_thumbnail #name {
+  float: left; width: 80%;
+  padding: 7px; padding-left: 21px;
+  font-weight: bold;
+  font-size: 17px;
+}
+#department_a_thumbnail #delete {
+  float: right; width: 10%;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: right;
+}
+#department_a_sub {
+  float: right; width: 97%;
+}

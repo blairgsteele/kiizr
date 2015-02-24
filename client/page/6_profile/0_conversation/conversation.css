@@ -1,0 +1,51 @@
+#conversationinput {
+  padding-top: 17px;
+}
+
+#conversationinput #message {
+  float: left; width: 83%;
+  padding-right: 3.5px;
+}
+#conversationinput #sendmessage {
+  float: right; width: 17%;
+  text-align: center; 
+  padding-top: 7.5px; padding-bottom: 7.5px;
+  font-size: 17px;
+  border-radius: 3.5px; background: rgba(255,162,0,0.9);
+  color: white;
+}
+#conversationhistory {
+  padding-top: 7px; 
+}
+
+#conversationmessage {
+  padding-top: 7px;
+  border-bottom: 1px dotted rgba(0,0,0,0.17);
+}
+#conversationmessage #username {
+  font-weight: bold; font-size: 77%;
+  float: left;
+}
+#conversationmessage #date {
+  font-weight: bold; font-size: 77%;
+  float: right;
+}
+#conversationmessage #message {
+  float: left; width: 90%;
+  padding: 7px; padding-top: 0px;
+}
+#conversationmessage #delete {
+  float: right; width: 10%;
+  text-align: center;
+  color: rgba(255,162,0,0.9);
+}
+#conversationmessage #admindelete {
+  float: right; width: 10%;
+  text-align: center;
+  color: rgba(255,162,0,0.9);
+}
+#conversationmessage #ownerdelete {
+  float: right; width: 10%;
+  text-align: center;
+  color: rgba(255,162,0,0.9);
+}

@@ -1,0 +1,33 @@
+<template name = 'settings'>
+  <div id = 'settings'>
+    
+    <div id = 'settingsbutton' class = 'navtovieworders'>
+      <div id = 'settingsicon'><i class="fa fa-bell-o"></i></div>
+      <div id = 'settingstitle'>View orders</div> <div id = 'clear'></div>
+    </div>
+    <div id = 'settingsbutton' class = 'navtocreateproduct'>
+      <div id = 'settingsicon'><i class="fa fa-plus"></i></div>
+      <div id = 'settingstitle'>Create product</div> <div id = 'clear'></div>
+    </div>    
+    <div id = 'settingsbutton' class = 'navtoeditstore'>
+      <div id = 'settingsicon'><i class="fa fa-building"></i></div>
+      <div id = 'settingstitle'>Edit store</div> <div id = 'clear'></div>
+    </div>
+    
+    <div id = 'settingsbutton' class = 'legal navtoprivacypolicy'>
+      <div id = 'settingsicon'><i class="fa fa-newspaper-o"></i></div>
+      <div id = 'settingstitle'>Privacy policy</div> <div id = 'clear'></div>
+    </div>
+    <div id = 'settingsbutton' class = 'legal navtotermsofuse'>
+      <div id = 'settingsicon'><i class="fa fa-newspaper-o"></i></div>
+      <div id = 'settingstitle'>Terms of use</div> <div id = 'clear'></div>
+    </div>
+    {{#if showadmin}}
+      <div id = 'settingsbutton' class = 'navtoadmin'>
+        <div id = 'settingsicon'><i class="fa fa-user-secret"></i></div>
+        <div id = 'settingstitle'>Administrator</div> <div id = 'clear'></div>
+      </div>
+    {{/if}}
+    
+  </div>
+</template>

@@ -1,0 +1,31 @@
+<template name = 'departments'>
+  <div id = 'departments'>
+    {{#each departments}}
+      {{> department_thumbnail}}
+    {{/each}}
+  </div>
+</template>
+
+<template name = 'department'>
+  {{> productdisplay_department_recent}}
+</template>
+
+<template name = 'department_thumbnail'>
+  <div id = 'department_thumbnail'>
+    <i class="fa fa-{{icon}}"></i>
+    <a href="{{pathFor 'department'}}"> <p>{{name}}</p> {{parent}} </a>
+    
+    {{> department_thumbnail_sub}}
+  </div>
+</template>
+
+<template name = 'department_thumbnail_sub'>
+  <div id = 'department_thumbnail_sub'>
+    {{#each departments}}
+      <div id = 'icon'> <i class="fa fa-{{icon}}"></i> </div>
+      <a href="{{pathFor 'department'}}"> <div id = 'name'> {{name}} ({{productcount}})</div> </a>
+      <div id = 'clear'></div>
+      {{> department_thumbnail_sub}}
+    {{/each}}
+  </div>
+</template>

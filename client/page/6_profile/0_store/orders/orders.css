@@ -1,0 +1,80 @@
+#order_quicklink {
+  margin: 7px; padding-bottom: 17px; padding-top: 17px;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+#order_quicklink #customername {
+  font-weight: bold; float: left; font-size: 117%;
+}
+#order_quicklink #messagecount {
+  float: right;
+}
+
+#orderheader {
+  background: rgba(0,0,0,0.1);
+  height: 35px;
+}
+
+#orderheader #open {
+  float: left; width: 50%;
+  text-align: center;
+  font-weight: bold;
+  line-height: 35px;
+}
+#orderheader #archive {
+  float: right; width: 50%;
+  text-align: center;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+
+#order_thumbnail {
+  margin: 3.5px; padding: 3.5px;
+  background: rgba(0,0,0,0.017);
+  border-radius: 3.5px;
+}
+#order_thumbnail #productimage {
+  float: left; width: 107px;
+  height: 107px; 
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#order_thumbnail #right {
+  padding: 3.5px;
+  float: left; width: 70%;
+  max-width: calc(100% - 117px);
+}
+#order_thumbnail #right #information {
+  float: left; width: 50%;
+}
+#order_thumbnail #right #confirmation {
+  float: right; width: 50%;
+}
+#order_thumbnail #right #productname {
+  font-weight: bold; font-size: 150%; margin-top: 7px;
+  margin-right: 7px; text-align: center; color: rgba(255,162,0,1);
+}
+#order_thumbnail #right #customername {
+  font-size: 80%; padding-top: 1.7px; padding-left: 7px;
+}
+#order_thumbnail #right #productprice {
+  font-size: 90%; padding-top: 1.7px; padding-left: 7px;
+}
+#order_thumbnail #right #confirmation {
+  padding-top: 7px;
+}
+#order_thumbnail #right #confirmation #inputconfirmationcode {
+  text-align: center;
+}
+#order_thumbnail #right #confirmation #completeorderbutton {
+  border-radius: 3.5px; background: rgba(0,0,0,0.1);
+  padding: 10.5px; font-weight: bold; font-size: 117%;
+  margin-top: 7px; text-align: center;
+}
+#order_thumbnail #right #confirmation #cancelorderbutton {
+  border-radius: 3.5px; background: rgba(0,0,0,0.1);
+  padding: 3.5px; font-weight: bold; font-size: 117%;
+  margin-top: 7px; text-align: center;
+}

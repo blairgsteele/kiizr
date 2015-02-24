@@ -1,0 +1,37 @@
+body {
+  padding-bottom: 27px;
+}
+* {
+  padding: 0px; 
+  margin: 0px;
+}
+
+#clear {
+  clear: both;
+  width: 100%;
+}
+
+#content {
+  width: 100%;
+}
+
+.menu {
+  overflow-x: hidden;
+  left: 0px;
+}
+#content #left {
+  background: #333;
+  position: fixed;
+  top: 47px; left: 0px;
+  width: 270px;
+  height: 100%; z-index: 7171717717171;
+  transition: left 0.37s ease; 
+  -webkit-transition: left 0.37s ease; 
+  -moz-transition: left 0.37s ease;
+}
+.hiddenmenu #left {
+  left: -270px !important;
+}
+#content #right {
+  width: 100%;
+}

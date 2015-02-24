@@ -1,0 +1,11 @@
+<head>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"/>  
+	<title>Kiizr</title>
+</head>
+<template name = 'layout'>
+  {{> header}}
+  <div id = 'content' class = 'menu hiddenmenu'>
+    <div id = 'left'>{{> menu}}</div>
+    <div id = 'right'>{{> yield}}<div id = 'clear'></div></div>
+  </div>
+</template>

@@ -1,0 +1,68 @@
+<template name = 'admin'>
+  <div id = 'admin'>
+    {{> department_a_manage}}
+  </div>
+</template>
+
+<template name = 'department_a_manage'>
+  <div id = 'department_a_manage'>
+    <div id = 'department_a_manage_left'>
+      {{#if showedit}}
+        {{> department_a_edit}}
+      {{/if}}
+
+      {{#if showcreate}}
+        {{> department_a_create}}
+      {{/if}}
+    </div>
+    <div id = 'department_a_manage_right'>
+      {{> department_a_list}}
+    </div>
+    <div id = 'clear'></div>
+  </div>
+</template>
+
+<template name = 'department_a_edit'>
+  <div id = 'department_a_edit'>
+    {{#with department}}
+    <div id = 'title'> Edit department </div> <div id = 'exit'> <i class="fa fa-close"></i> </div> <div id = 'clear'></div>
+    <div id = 'name'> <label> Name </label> <div class="ui fluid input"> <input id = 'inputname' type="text" value="{{name}}"> </div> </div>
+    <div id = 'icon'> <label> Icon </label> <div class="ui fluid input"> <input id = 'inputicon' type="text" value="{{icon}}"> </div> </div>
+    <div id = 'parent'> <label> Parent </label> {{> departmentselect}} </div>
+    <div id = 'clear'></div> <div id = 'submitdepartment'>save</div>
+    {{/with}}
+  </div>
+</template>
+
+<template name = 'department_a_create'>
+  <div id = 'department_a_create'>
+    <div id = 'title'> Create department </div> <div id = 'clear'></div>
+    <div id = 'name'> <label> Name </label> <div class="ui fluid input"> <input id = 'inputname' type="text" placeholder="electronic"> </div> </div>
+    <div id = 'icon'> <label> Icon </label> <div class="ui fluid input"> <input id = 'inputicon' type="text" placeholder="gift"> </div> </div>
+    <div id = 'parent'> <label> Parent </label> {{> departmentselect}} </div>
+    <div id = 'clear'></div> <div id = 'submitdepartment'>create</div>
+  </div>
+</template>
+
+<template name = 'department_a_list'>
+  <div id = 'department_a_list'>
+    {{#each list}}
+      {{> department_a_thumbnail}}
+    {{/each}}
+    <div id = 'clear'></div>
+  </div>
+</template>
+<template name = 'department_a_thumbnail'>
+  <div id = 'department_a_thumbnail' style = 'color:{{color}}'>
+    <div id = 'icon'> <i class="fa fa-{{icon}}"></i> </div>
+    <div id = 'name'> {{name}} </div>
+    <div id = 'delete'> <i class="fa fa-close"></i> </div>
+    <div id = 'clear'></div>
+  </div>
+  <div id = 'department_a_sub'>
+    {{#each list}}
+      {{> department_a_thumbnail}}
+    {{/each}}
+    <div id = 'clear'></div>
+  </div>
+</template>

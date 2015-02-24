@@ -1,0 +1,115 @@
+<template name = 'createproduct'>
+  <div id = 'createproduct'>
+
+  	<div id = 'createproduct_left'>
+  		<div id = 'uploadimage'>{{> uploadimage}}</div>
+  		<div id = 'departmentselect'>{{> departmentselect}}</div>
+  		<div id = 'conditionselect'>{{> conditionselect}}</div>
+  		<div id = 'clear'></div>
+  	</div>
+
+  	<div id = 'createproduct_right'>
+  		<div id = 'productname'>{{> productname}}</div>
+  		<div id = 'productprice'>{{> productprice}}</div>
+  		<div id = 'productdescription'>{{> productdescription}}</div>
+  	</div>
+
+  	<div id = 'clear'></div>
+    <div id = 'productdelivery'>{{> productdelivery}}</div>
+    <div id = 'productsubmit'>Submit</div>
+  </div>
+</template>
+
+<template name = 'uploadimage'>
+  <div id = 'productimage' style = 'background-image:url({{background}});'>
+  </div>
+  {{> upload_semanticUI }}
+</template>
+
+<template name = 'departmentselect'>
+	<div class="ui selection fluid dropdown">
+		<input type="hidden" name="department" id = 'inputdepartment'>
+		<div class="default text">{{department}}</div>
+		<i class="dropdown icon"></i>
+		<div class="menu">
+			{{#each departmentlist}}
+				<div class="item" data-value="{{name}}">{{name}}</div>
+			{{/each}}
+		</div>
+	</div>
+</template>
+
+<template name = 'conditionselect'>
+	<div class="ui selection fluid dropdown">
+		<input type="hidden" name="gender">
+		<div class="default text">Condition</div>
+		<i class="dropdown icon"></i>
+		<div class="menu">
+			{{#each conditionlist}}
+				<div class="item" data-value="{{name}}">{{name}}</div>
+			{{/each}}
+		</div>
+	</div>
+</template>
+
+<template name = 'productname'>
+  <form class="ui form">
+    <div class="ui fluid input">
+      <label>Name</label>
+      <input id = 'inputname' type="text" placeholder="Kiizr">
+    </div>
+  </form>
+</template>
+
+<template name = 'productprice'>
+  <form class="ui form">
+    <div class="ui fluid input">
+       <label>Price</label>
+      <input id = 'inputprice' type="number" placeholder="800">
+    </div>
+  </form>
+</template>
+
+<template name = 'productdescription'>
+  <form class="ui form">
+    <div class="field">
+      <label>Description</label>
+      <textarea id = 'inputdescription' type="text" placeholder="An online superstore"></textarea>
+    </div>
+  </form>
+</template>
+
+<template name = 'productdelivery'>
+  <form class="ui form">
+  <h4 class="ui block top attached header">Delivery</h4>
+  <div class="ui bottom attached secondary segment">
+    <div class="grouped fields">
+      <label for="alone">How will you have your product delivered?</label>
+      
+      <!-- /////////////////////////////////////////// -->
+      <div class="field">
+        <div class="ui radio checkbox checked">
+          <input type="radio" checked="true" name="delivery">
+          <label><b>Personal Delivery</b> - Use your own organized delivery to get the product into the hands of your customers.</label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" checked="false" name="delivery">
+          <label><b>Customer Pickup</b> - Customers will need to visit your location/s to pick up their orders.</label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" checked="false" name="delivery">
+          <label><b>Kiizr Delivery</b> - Have your product delivered to customers by Kiizr.</label>
+        </div>
+      </div>
+      <!-- /////////////////////////////////////////// -->
+      
+    </div>
+  </div>
+  </form>
+</template>

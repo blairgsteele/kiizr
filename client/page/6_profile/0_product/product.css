@@ -1,0 +1,231 @@
+#product_thumbnail_square {
+  width: 100%;
+  border: 1px dashed rgba(0,0,0,0.07);
+}
+
+#product_thumbnail_square #leader {
+  margin-bottom: 0px;
+  height: 32px; width: 100%;
+  background: rgba(0,0,0,0.017);
+  color: black; z-index: 17;
+}
+#product_thumbnail_square #leader #department {
+  float: left; margin: 3.5px; margin-right: 0px;
+  width: 24px; height: 24px; 
+  background: rgba(255,255,255,1); border-radius: 50%;
+  text-align: center; color: black; line-height: 24px;
+}
+#product_thumbnail_square #leader #user {
+  float: left; padding: 7px;
+  font-size: 87%; font-weight: bold;
+  color: black;
+}
+#product_thumbnail_square #leader #date {
+  float: right; line-height: 32px;
+  font-size: 87%; font-weight: bold;
+}
+
+#product_thumbnail_square #image {
+  width: 100%; height: 270px;
+  background: rgba(0,0,0,0.1);
+  padding: 3.5px; padding-top: 3px;
+  background-position: center;
+  background-size: cover;
+}
+#product_thumbnail_square #edit {
+  float: right; margin: 3.5px; margin-right: 3.5px;
+  width: 24px; height: 24px; border-radius: 50%;
+  text-align: center; line-height: 24px;
+  background: rgba(255,162,0,0.9); color: white;
+}
+#product_thumbnail_square #like {
+  float: right; margin: 3.5px; margin-right: 3.5px; margin-left: 7px;
+  width: 24px; height: 24px; 
+  background: rgba(255,255,255,1); border-radius: 50%;
+  text-align: center; line-height: 24px;
+  
+  -webkit-transition: color 1.7s ease-in-out;
+  -moz-transition: color 1.7s ease-in-out;
+  -ms-transition: color 1.7s ease-in-out;
+  -o-transition: color 1.7s ease-in-out;
+  transition: color 1.7s ease-in-out;
+  -webkit-transition: background 0.7s ease-in-out;
+  -moz-transition: background 0.7s ease-in-out;
+  -ms-transition: background 0.7s ease-in-out;
+  -o-transition: background 0.7s ease-in-out;
+  transition: background 0.7s ease-in-out;
+}
+
+#product_thumbnail_square #information {
+  color: black;
+}
+#product_thumbnail_square #information #name {
+  float: left; font-weight: bold;
+  padding: 7px; padding-bottom: 0px;
+  color: black;
+}
+#product_thumbnail_square #information #name a {
+  color: black
+}
+#product_thumbnail_square #information #rate {
+  float: left; 
+  padding: 7px; padding-bottom: 0px;
+}
+#product_thumbnail_square #information #price {
+  float: right; font-size: 17px; font-weight: bold;
+  padding: 7px; padding-bottom: 0px; margin-top: -4px;
+}
+#product_thumbnail_square #information #department {
+  float: right; font-size: 11px; font-weight: bold;
+  padding: 7px; padding-bottom: 0px;
+}
+#product_thumbnail_square #information #description {
+  padding: 7px; font-size: 90%;
+}
+
+#productdisplay_recent > div > div, #productdisplay_bucket > div > div {
+  padding: 3.5px !important;
+  padding-right: 0px !important;
+}
+.ui.grid, .ui.stackable.grid {
+  margin: 0px !important;
+  margin-top: 0px !important;
+  padding-right: 3.5px !important;
+}
+
+#product {
+	width: 100%;
+}
+
+#product #product_left {
+	float: left;
+	width: 50%;
+}
+#product #product_right {
+	float: right;
+	width: 50%;
+  padding-right: 3.5px;
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 800px) {
+  #product #product_left {
+    float: none;
+    width: 100%;
+  }
+  #product #product_right {
+    float: none;
+    width: 100%;
+    padding-right: 3.5px;
+    padding-left: 3.5px;
+    padding-top: 7px;
+  }
+}
+
+#product #product_left #uploadimage {
+	height: 377px; 
+	width: 98%; padding: 3.5px;
+  margin: 7px; margin-left: auto; margin-right: auto;
+  background: rgba(0,0,0,0.1);
+  background-position: center;
+  background-size: cover;
+}
+#product #product_left #uploadimage #edit {
+  text-align: center; 
+  border-radius: 50%; float: right;
+  background: rgba(255,162,0,0.9); color: white;
+  font-size: 17px; line-height: 1.7em;
+  width: 27px; height: 27px;
+}
+#product #product_left #departmentselect {
+	float: left;
+	width: 48.5%; margin-left: 2%;
+  font-weight: bold; font-size: 13.5px;
+  margin-top: -27px; opacity: 0.35;
+}
+#product #product_left #conditionselect {
+	float: right;
+	width: 48.5%; margin-right: 1%;
+}
+
+#product #product_right #productname {
+	padding-top: 3.5px; font-weight: bold;
+  font-size: 27px; float: left;
+}
+#product #product_right #productprice {
+	padding: 3.5px; font-weight: bold;
+  font-size: 27px; float: right;
+}
+#product #product_right #productdescription {
+  clear: both; font-size: 17px;
+	padding-top: 7px; padding-bottom: 3.5px;
+  padding-left: 7px; margin-right: 7px;
+  border-bottom: 2px dashed rgba(0,0,0,0.07);
+}
+#product #product_right #convo {
+  clear: both;
+	padding-top: 7px; padding-bottom: 3.5px;
+}
+#product #product_right #convo #commentbutton {
+  float: left;
+  font-size: 15px; font-weight: bold; margin-left: 7px; padding-top: 7px; padding-bottom: 3.5px;
+}
+#product #product_right #convo #discussbutton {
+  float: left;
+  font-size: 15px; font-weight: bold; margin-left: 17px; padding-top: 7px; padding-bottom: 3.5px;
+}
+#product #product_right #convo #adminbutton {
+  float: left;
+  font-size: 15px; font-weight: bold; margin-left: 17px; padding-top: 7px; padding-bottom: 3.5px;
+}
+#product #product_right #productdescription label {
+	margin-bottom: -2px; margin-top: -3px;
+}
+#product_right label {
+  font-weight: bold; padding: 3.5px;
+}
+
+#product #productdelivery {
+	padding: 3.5px;
+}
+
+#product #productbutton {
+	margin: 7px;
+}
+#product #productbutton #productbucket {
+  color: white; text-align: center; font-weight: bold;
+  border-radius: 3.5px; padding: 7px;
+  float: right; width: 72.7%;
+  background: rgba(255,162,0,0.9);
+  -webkit-transition: width 0.7s ease-in-out;
+  -moz-transition: width 0.7s ease-in-out;
+  -ms-transition: width 0.7s ease-in-out;
+  -o-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+#product #productbutton #productpurchase {
+  color: white; text-align: center; font-weight: bold;
+  border-radius: 3.5px; padding: 7px;
+  float: left; width: 26.7%;
+  background: rgba(17,170,17,0.9);
+  -webkit-transition: width 0.7s ease-in-out;
+  -moz-transition: width 0.7s ease-in-out;
+  -ms-transition: width 0.7s ease-in-out;
+  -o-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+#product #productbutton #productchild {
+  color: white; text-align: center; font-weight: bold;
+  border-radius: 3.5px; padding: 7px; margin-top: 7px;
+  float: left; width: 100%;
+  background: rgba(17,170,17,0.9);
+}
+@media only screen and (max-width: 600px) {
+	#product #product_left { 
+    float: none; width: 100%; 
+  }
+	#product #product_right { 
+    float: none; width: 100%; margin-top: 7px;
+    padding-left: 3.5px;
+  }
+}

@@ -1,0 +1,31 @@
+<template name = 'menu'>
+  <div id = 'menu'>
+    <div id = 'menubutton' class = 'navtohome'>
+      <div id = 'menuicon'><i class="fa fa-newspaper-o"></i></div>
+      <div id = 'menutitle'>Home</div> <div id = 'clear'></div>
+    </div>
+    <div id = 'menubutton' class = 'navtodepartments'>
+      <div id = 'menuicon'><i class="fa fa-building-o"></i></div>
+      <div id = 'menutitle'>Departments</div> <div id = 'clear'></div>
+    </div>
+    <div id = 'menubutton' class = 'navtobucket'>
+      <div id = 'menuicon'><i class="fa fa-shopping-cart"></i></div>
+      <div id = 'menutitle'>Bucket</div> <div id = 'clear'></div>
+    </div>
+    <div id = 'menubutton' class = 'navtonotifications'>
+      <div id = 'menuicon'><i class="fa fa-asterisk"></i></div>
+      <div id = 'menutitle'>Notifications</div> <div id = 'clear'></div>
+    </div>
+    <div id = 'menubutton' class = 'navtoprofile'>
+      <div id = 'menuicon'><i class="fa fa-user"></i></div>
+      <div id = 'menutitle'>Profile</div> <div id = 'clear'></div>
+    </div>
+    {{#if showadmin}}
+      <div id = 'menubutton' class = 'navtoadmin'>
+        <div id = 'menuicon'><i class="fa fa-user-secret"></i></div>
+        <div id = 'menutitle'>Administrator</div> <div id = 'clear'></div>
+      </div>  
+    {{/if}}
+    
+  </div>
+</template>

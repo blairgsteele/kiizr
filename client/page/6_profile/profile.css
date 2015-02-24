@@ -1,0 +1,72 @@
+#profile {
+  width: 100%;
+}
+
+#profile #banner {
+  background: silver;
+  width: 100%; height: 177px;
+  border-bottom: 1px dotted rgba(270,270,270,0.7);
+  background-position: center;
+  background-size: cover;
+}
+#profile #display_name {
+  margin-top: -147px;
+  padding-left: 17px;
+}
+#profile #display_name #display {
+  width: 127px; height: 127px;
+  background: white; border-radius: 50%;
+  border: 7px solid rgba(0,0,0,0.07);
+  float: left;
+  background-position: center;
+  background-size: cover;
+  z-index: 2000;
+}
+#profile #display_name #name {
+  float: left;
+  padding: 12px;
+  background: rgba(0,0,0,0.17); border-radius: 3.5px;
+  color: white;
+  z-index: 1; margin-left: 17px; margin-top: 7px;
+}
+#profile #display_name #name #storename {
+  padding-left: 7px;
+  font-size: 37px; font-weight: bold;
+}
+#profile #display_name #name #description {
+  font-size: 11px;
+  padding-left: 7px;
+}
+#profile #productlist {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #profile #display_name #name #storename {
+    padding-left: 7px; font-size: 27px; font-weight: bold;
+  }
+  #profile #display_name #name #description {
+    padding-left: 7px; font-size: 14px; font-weight: bold;
+  }
+}
+@media screen and (max-width: 700px) {
+  #profile #display_name #display {
+    width: 97px; height: 97px;
+    background: white; border-radius: 50%;
+    border: 7px solid rgba(0,0,0,0.07);
+    float: none; margin-left: auto; margin-right: auto;
+    background-position: center;
+    background-size: cover;
+  }
+  #profile #display_name #name {
+    margin-top: 7px; width: 50%; margin-left: auto; margin-right: auto;
+    text-align: center; float: none; padding: 7px; min-width: 270px;
+  }
+  #profile #display_name #name #storename {
+    font-size: 117%; font-weight: bold;
+  }
+  #profile #display_name #name #description {
+    display: none;
+    padding-left: 7px; font-size: 10px; font-weight: bold;
+  }
+}

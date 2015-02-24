@@ -1,0 +1,10 @@
+Meteor.publish("notification", function () { return Notification.find(); });
+Meteor.publish("conversation", function () { return Conversation.find(); });
+Meteor.publish("message", function () { return Message.find(); });
+Meteor.publish("department", function () { return Department.find(); });
+Meteor.publish("condition", function () { return Condition.find(); });
+Meteor.publish("order", function () { return Order.find(); });
+Meteor.publish("receipt", function () { return Receipt.find(); });
+Meteor.publish("store", function () { return Store.find(); });
+Meteor.publish("product", function () { return Product.find(); });
+Meteor.publish("bucket", function () { return Bucket.find(); });

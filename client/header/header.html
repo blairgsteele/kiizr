@@ -1,0 +1,35 @@
+<template name = 'header'>
+  <div id = 'header'>
+    <div id = 'menuswitch'>
+      {{#if showmenu}}
+      <i class="fa fa-align-justify"></i>
+      {{/if}}
+      <div id = 'title'>{{title}}</div>
+    </div> 
+    {{#if showsearch}}
+    <div id = 'search'>
+      <div id = 'searchswitch'><i class="fa fa-search"></i></div>
+      <div id = 'searchbar' class = 'hiddensearch'> {{> esInput index="product" placeholder="Search..." }} </div>
+    </div>
+    {{/if}}
+    {{#if showsettings}}
+    <div id = 'settings'>
+      <i class="fa fa-cog"></i>
+    </div>
+    {{/if}}
+    
+    <!-- -->
+    
+    {{#if showreturnbase}}
+    <div id = 'returnbase' class = 'returnbutton'>
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    {{/if}}
+    {{#if showreturntop}}
+    <div id = 'returntop' class = 'returnbutton'>
+      <i class="fa fa-chevron-up"></i>
+    </div>
+    {{/if}}
+    
+  </div>
+</template>

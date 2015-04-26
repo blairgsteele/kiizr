@@ -6,6 +6,7 @@
 standard-app-packages
 meteor-platform
 meteorhacks:npm
+npm-container
 
 iron:router
 random
@@ -42,6 +43,3 @@ tomi:upload-jquery
 cfs:graphicsmagick
 
 reactive-var
-
-
-npm-container
